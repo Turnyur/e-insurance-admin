@@ -76,8 +76,7 @@ class AdminController extends Controller
 
     $authenticatedAdmin = $adminAccountToUpdate;
     $pageTitle = "Account | Dashboard | ". env('APP_NAME');
-       return view(
-           'dashboard.account',
+       return view('dashboard.account',
            compact('pageTitle', 'authenticatedAdmin', 'successToastMessage', 'errorToastMessage'));
    }
 }
